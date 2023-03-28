@@ -1,0 +1,15 @@
+logging:
+    level:
+        root: info
+    file:
+        name: log\ThreadPool.log
+    logback:
+        rollingpolicy:
+            clean-history-on-start: true    # 启动打包旧日志
+            max-history: 7              #保留日志天数
+            max-file-size: 30MB         #压缩文件大小
+            total-size-cap: 10GB        #最大日志空间
+server:
+    port: 58080
+    servlet:
+        context-path: /ThreadPool

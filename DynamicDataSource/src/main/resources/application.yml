@@ -1,0 +1,35 @@
+logging:
+    level:
+        root: info
+    file:
+        name: D:\data\java\log\DynamicDataSource\DynamicDataSource.log
+    #        name: log/sz-node-master.log
+    #        path: D:\data\java\log\sz-node-master
+    logback:
+        rollingpolicy:
+            clean-history-on-start: true    # 启动打包旧日志
+            max-history: 7              #保留日志天数
+            max-file-size: 30MB         #压缩文件大小
+            total-size-cap: 10GB        #最大日志空间
+spring:
+    datasource:
+        dynamic:
+            primary: master
+            datasource:
+                #写库 写
+                master:
+                    url: jdbc:mysql:///cewen?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
+                    driver-class-name: com.mysql.jdbc.Driver
+                    username: root
+                    password: root
+                #从库 读
+                traffic:
+                    url: jdbc:mysql:///szc?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
+                    driver-class-name: com.mysql.jdbc.Driver
+                    username: root
+                    password: root
+                traffic2:
+                    driverClassName: com.mysql.jdbc.Driver
+                    url: jdbc:mysql://localhost:3306/flight_node_guarantee?useUnicode=true&characterEncoding=utf8&useSSL=false
+                    username: root
+                    password: root

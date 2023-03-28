@@ -1,0 +1,14 @@
+com.ans1:ANS编码测试
+com.bhd:十六进制转换
+com.bigDecimal:处理数字计算精度丢失
+com.date:日期数据序列化
+com.http:HttpPost测试
+com.io:文件流读取
+com.json:jackson序列化
+com.mapstruct:对象转换工具类
+com.mqs:json反序列化、图片存储
+com.mqtt:mqtt订阅者发布者
+com.netty:netty服务器
+com.properties:文件路径测试、配置文件读取
+com.sm4:国密SM4加解密
+com.xml:xml序列化
