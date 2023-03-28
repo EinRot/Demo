@@ -130,20 +130,12 @@ public class JsonAnalysis {
                         //添加纯数组到最外层(仅添加父节点为非数组结构)
                         try {
                             result.put(listKeyName.toString(), ((JSONArray) entry.getValue()).toList(j.getClass()));
-//                            if(result.containsKey(listKeyName.toString()))
-//                                result.put(listKeyName.toString(), null);
-//                            else
-//                                result.put(listKeyName.toString(), ((JSONArray) entry.getValue()).toList(j.getClass()));
                         } catch (Exception e) {
                             log.error("放入数组失败：《{}》,改为直接存入", listKeyName);
                             for (StackTraceElement s : e.getStackTrace()) {
                                 log.error(s.toString());
                             }
                             result.put(listKeyName.toString(), entry.getValue());
-//                            if(result.containsKey(listKeyName.toString()))
-//                                result.put(listKeyName.toString(), null);
-//                            else
-//                                result.put(listKeyName.toString(), entry.getValue());
                         }
                         isObjList = false;
                         if (printLog)
@@ -158,20 +150,12 @@ public class JsonAnalysis {
                 if (isObjList) {
                     keyName.append(entry.getKey());
                     result.put(keyName.toString(), list);
-//                    if(result.containsKey(keyName.toString()))
-//                        result.put(keyName.toString(), null);
-//                    else
-//                        result.put(keyName.toString(), list);
                 }
                 sinkBottom.upOutStatus();
             } else {
                 keyName.append(entry.getKey());
                 //json值放入map
                 result.put(keyName.toString(), entry.getValue());
-//                if(result.containsKey(keyName.toString()))
-//                    result.put(keyName.toString(), null);
-//                else
-//                    result.put(keyName.toString(), entry.getValue());
                 if (ObjectUtils.isNotEmpty(entry.getValue())) {
                     if (printLog)
                         log.info("解析：《{}》:《{}》,类型:《{}》", keyName, entry.getValue(), entry.getValue().getClass().getSimpleName());
