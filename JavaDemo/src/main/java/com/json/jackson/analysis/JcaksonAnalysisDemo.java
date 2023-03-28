@@ -38,7 +38,7 @@ public class JcaksonAnalysisDemo {
         loggerList.forEach(logger -> logger.setLevel(Level.INFO));
     }
     public static void main(String[] args) throws IOException {
-        Reader reader = new FileReader("D:/工作/恒泰/深智城/车联网/数据样例/龙华OBU-rsi.json");
+        Reader reader = new FileReader("");
         int ch = reader.read();
         StringBuffer buffer = new StringBuffer();
         while (ch != -1) { //读取成功

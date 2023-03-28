@@ -18,10 +18,7 @@ public class JsonServer {
 
     public static void main(String[] args) throws IOException {
         String url;
-//        url = "D:/工作/恒泰/深智城/平台/JSON解析/parent.json";
-//        url = "D:/工作/恒泰/深智城/平台/JSON解析/parent-list.json";
-        url="D:/工作/恒泰/深智城/车联网/数据样例/龙华OBU-bsm.json";
-//        url="D:/工作/恒泰/深智城/车联网/数据样例/龙华OBU-map.json";
+        url="";
         Reader reader = new FileReader(url);
         int ch = reader.read();
         StringBuffer buffer = new StringBuffer();
@@ -60,7 +57,7 @@ public class JsonServer {
     @Test
     public void test() throws IOException {
         String url;
-        url="D:/工作/恒泰/深智城/车联网/数据样例/龙华OBU-map.json";
+        url="";
         Reader reader = new FileReader(url);
         int ch = reader.read();
         StringBuffer buffer = new StringBuffer();
