@@ -11,11 +11,10 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * 　　* @author EinIce
- * 　　* @description: TODO 读取json文件循环遍历
- * 　　* @date 2022/6/7
- *
- */
+ * @user EinIce
+ * @date 2022/6/14 10:22
+ * @Description 读取json文件循环遍历
+ **/
 public class JsonFile {
     public static void main(String[] args) throws IOException {
         Reader reader = new FileReader("C:\\Users\\EinIce\\Desktop\\api.json");
