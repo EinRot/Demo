@@ -1,4 +1,4 @@
-package com.cache;
+package itmg.abs.bussiness.extend.util;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.TimerTask;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author chenjunhong
+ * @author EinRot
  * @description TODO 缓存工具类
  * @date 2022/5/3
  */
