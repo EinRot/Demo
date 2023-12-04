@@ -1,4 +1,4 @@
-package itmg.abs.bussiness.extend.util;
+package com.cache;
 
 import java.util.LinkedList;
 import java.util.List;
