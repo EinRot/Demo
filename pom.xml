@@ -14,10 +14,11 @@
     </properties>
     <modules>
         <module>DynamicDataSource</module>
-        <module>JavaDemo</module>
-        <module>TcpServerDemo</module>
+        <module>Util</module>
+        <module>TcpServer</module>
         <module>WinScript</module>
         <module>ThreadPool</module>
-        <module>SpringDemo</module>
+        <module>Spring</module>
+        <module>MavenBuild</module>
     </modules>
 </project>
