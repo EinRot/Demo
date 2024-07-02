@@ -25,13 +25,13 @@ public class TestCountDownLatch {
         reader.close();
         String data = buffer.toString();
     	//创建一个CountDownLatch对象，并调用构造器将计数器设置为5
-        CountDownLatch latch = new CountDownLatch(32);
+        CountDownLatch latch = new CountDownLatch(5);
         //创建一个LatchDemo对象，并将CountDownLatch的实例对象传入
         LatchDemo ld = new LatchDemo(latch,data);
 		//记录开始时间
         long start = System.currentTimeMillis();
 		//通过循环创建并启动五个线程
-        for(int i = 0; i < 32; i++){
+        for(int i = 0; i < 5; i++){
             new Thread(ld).start();
         }
         try {
