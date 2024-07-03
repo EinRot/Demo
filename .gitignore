@@ -2,6 +2,9 @@ HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 
+*.cmd
+*.sh
+
 ### JAVA ###
 *.class
 logs/
