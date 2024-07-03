@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @Date 2024/7/2 16:13
  **/
 @SpringBootApplication
-@ComponentScan(value = {"com.drive"})
+@ComponentScan(value = {"com.drive.*","com.edge.*"})
 public class BuildApplication {
     public static void main(String[] args) {
         SpringApplication.run(BuildApplication.class);
