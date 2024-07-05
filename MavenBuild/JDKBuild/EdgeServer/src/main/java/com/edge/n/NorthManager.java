@@ -4,6 +4,7 @@ import com.drive.s.Report;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -20,6 +21,12 @@ public class NorthManager implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        reports.forEach(report -> report.report("开始发送"));
+        if(!ObjectUtils.isEmpty(reports))
+            reports.forEach(report -> report.report("开始发送"));
+    }
+
+    public static void main(String[] args) {
+        int i = 65001;
+        System.out.println(i);
     }
 }

@@ -4,6 +4,7 @@ import com.drive.n.Collect;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -20,6 +21,7 @@ public class SouthManager implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        collects.forEach(collect -> collect.collect("开始采集"));
+        if(!ObjectUtils.isEmpty(collects))
+            collects.forEach(collect -> collect.collect("开始采集"));
     }
 }

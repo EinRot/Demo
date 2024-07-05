@@ -25,6 +25,17 @@
             <groupId>com.build</groupId>
             <artifactId>BaseModue</artifactId>
             <version>1.0.0</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.build</groupId>
+            <artifactId>Modue1</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.build</groupId>
+            <artifactId>Modue2</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
     <build>
