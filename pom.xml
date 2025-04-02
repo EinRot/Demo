@@ -20,5 +20,6 @@
         <module>ThreadPool</module>
         <module>Spring</module>
         <module>MavenBuild</module>
+        <module>LinuxScript</module>
     </modules>
 </project>

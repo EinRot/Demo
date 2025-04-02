@@ -68,7 +68,6 @@ public class SecurityUtils {
         for (int i = 0; i < 8; i++) {
             bytes[i] = (byte) (0xff & (num >> (i * 8)));
         }
-
         return bytes;
     }
 
@@ -264,7 +263,7 @@ public class SecurityUtils {
     }
 
     /**
-     * 数字字符串转ASCII码字符串
+     * 字符串转十六进制ASCII码字符串
      *
      * @param content 字符串内容
      * @return ASCII字符串
@@ -494,7 +493,6 @@ public class SecurityUtils {
 
     /**
      * 二进制字符串转换为byte数组,每个字节以","隔开
-     *
      * @param binaryStr 二进制字符串binaryStr
      * @return 二进制节字数组
      */
@@ -505,4 +503,10 @@ public class SecurityUtils {
         }
         return b;
     }
+
+    public static void main(String[] args) {
+        String s = StringToAsciiString("aaa");
+        System.out.println(s);
+    }
+
 }

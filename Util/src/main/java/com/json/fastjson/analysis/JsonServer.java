@@ -18,7 +18,7 @@ public class JsonServer {
 
     public static void main(String[] args) throws IOException {
         String url;
-        url="";
+        url="D:\\data\\WeChat Files\\WeChat Files\\wxid_ylmor9ede45a22\\FileStorage\\File\\2024-07\\物模型\\物模型\\冷机冷却阀.json";
         Reader reader = new FileReader(url);
         int ch = reader.read();
         StringBuffer buffer = new StringBuffer();
